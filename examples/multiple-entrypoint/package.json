@@ -15,25 +15,11 @@
   "rebel": {
     "targets": [
       {
-        "target": "native",
-        "engine": "native",
-        "entry": "src/a.re"
-      },
-      {
-        "target": "byte",
-        "engine": "byte",
-        "entry": "src/a.re"
-      },
-      {
-        "target": "js-nice",
-        "engine": "bucklescript",
-        "entry": "src/a.re"
-      },
-      {
         "target": "js-ugly",
         "engine": "jsoo",
         "entry": "src/a.re"
       }
-    ]
+    ],
+    "ocamlfindDependencies": { "js_of_ocaml": "git+https://github.com/reasonml/js_of_ocaml-bin.git"}
   }
 }
